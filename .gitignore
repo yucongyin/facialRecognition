@@ -1,0 +1,5 @@
+lfw-deepfunneled/
+.ipynb_checkpoints/
+non_faces/
+data.pkl
+faces.npy

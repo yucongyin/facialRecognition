@@ -1,0 +1,125 @@
+model:
+max epoch: 1000
+init learning rate = 0.00001
+sample size = 0.1
+hidden layer(200,200,200)
+tolerance = 0
+training time: 437
+final interation: 312
+loss:0.0017677
+score:0.999
+result: no detection
+
+
+
+
+model1:
+max epoch: 1000
+init learning rate = 0.5
+sample size = 0.3
+hidden layer(100)
+tolerance = 0
+training time: 33 
+final interation: 120
+loss:0.68732656
+score:0.571
+result: entire picture is detected as face
+
+
+model2:
+max epoch: 1000
+init learning rate = 0.1
+sample size = 0.3
+hidden layer(100)
+tolerance = 0
+training time: 14 
+final interation: 37
+loss:0.04144044
+score:0.987
+result: 
+6 detected, 3 are correct
+
+
+model3:
+max epoch: 1000
+init learning rate = 0.05
+sample size = 0.3
+hidden layer(200)
+tolerance = 0
+training time:44  
+final interation:60 
+loss:0.1777012
+score:0.993
+result: 
+3 detected, 1 is correct
+
+
+model4:
+max epoch: 1000
+init learning rate = 0.1
+sample size = 0.3
+hidden layer(200)
+tolerance = 0
+training time: 22 
+final interation: 29
+loss:0.68924287
+score:0.571
+result: 
+entire picture is detected as face
+
+We are expecting model 2, which has low loss and high score
+
+model5:
+max epoch: 1000
+init learning rate = 0.1
+sample size = 0.3
+hidden layer(200,200,200)
+tolerance = 0
+training time: 66 
+final interation: 64
+loss:0.69563983
+score:0.570
+result: 
+entire picture is detected as face
+
+model6:
+max epoch: 1000
+init learning rate = 0.1
+sample size = 0.3
+hidden layer(2000)
+tolerance = 0
+training time: 585 
+final interation: 90
+loss:0.02219130
+score:0.977
+result: 7 are detected, no accuracy
+
+model7:
+max epoch: 1000
+init learning rate = 0.1
+sample size = 0.3
+hidden layer(50)
+tolerance = 0
+training time: 9 
+final interation: 44
+loss:0.03466183
+score:0.967
+result: 21 are detected, 10 are accurate
+
+so far the best model, let's change into a smaller learning rate to add accuracy
+
+model8:
+max epoch: 1000
+init learning rate = 0.05
+sample size = 0.3
+hidden layer(50)
+tolerance = 0
+training time: 7 
+final interation: 37
+loss:0.03544650
+score:0.992
+result: 9 are detected, 4 are accurate
+
+change the size of the test picture to make each face size fit more to the sample size
+
+
